@@ -23,6 +23,10 @@ public class ProductAppObject {
 		return this.driver.findElement(By.id("button_cart_245"));
 	}
 
+	public WebElement getContinueShoppingButton() {
+		return this.driver.findElement(By.xpath("/html/body/div[7]/div/div[2]/div[1]/a"));
+	}
+
 	public WebElement getGoToMyCartButton() {
 		return this.driver.findElement(By.xpath("//*[@id=\"sw_dropdown_8\"]/a"));
 	}
