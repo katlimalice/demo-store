@@ -13,14 +13,14 @@ import task.ProductTask;
 import task.SearchResultTask;
 
 public class AddProductsToTheShoppingCartTestCase {
-	
+
 	private WebDriver driver;
-	
+
 	private CartTask cartTask;
 	private HomeTask homeTask;
 	private ProductTask productTask;
 	private SearchResultTask searchResultTask;
-	
+
 	@Before
 	public void setUp() {
 		WebDriverManager.chromedriver().setup();
@@ -29,7 +29,7 @@ public class AddProductsToTheShoppingCartTestCase {
 		this.driver.get("http://demo.cs-cart.com/");
 		this.homeTask = new HomeTask(driver);
 	}
-	
+
 	@Test
 	public void searchForBatmanAndIphoneAndFindProductForAddToCart() {
 		this.homeTask.searchForProduct("Batman");
@@ -37,10 +37,9 @@ public class AddProductsToTheShoppingCartTestCase {
 		this.productTask.addBatmanToCart();
 		this.productTask.addIphoneToCart();
 		this.productTask.goToMyCart();
-		
-		
+
 	}
-	
+
 	@After
 	public void tearDown() {
 		this.driver.quit();
