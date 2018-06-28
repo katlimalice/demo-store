@@ -15,6 +15,14 @@ O script de teste foi desenvolvido para a loja virtual de demonstraçao disponíve
 * Maven - [maven.apache.org](https://maven.apache.org/)
 * JDK 8 - [oracle.com](http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html)
 
+### Execução
+
+ 1. Abra o projeto "desafiodbserver" com o Eclipse IDE
+ 2. Expandir o pacote "src/main/java" no Package Explorer
+ 3. Expandir o pacote "testsuite" no Package Explorer
+ 4. Clique com o botão direito na classe "AddProductsToTheShoppingCartTestCase.java"
+ 5. Clique no menu "Run As -> JUnit Test" (*ou utilize o atalho Alt+Shift+X,T*)
+
 ### Bibliotecas externas
 
 Dependências obtidas através do gerenciador de dependências do Maven.
