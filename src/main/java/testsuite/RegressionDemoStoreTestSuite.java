@@ -14,11 +14,11 @@ public class RegressionDemoStoreTestSuite {
 
 	@BeforeClass
 	public static void init() {
-		System.out.println("Iniciando execução...");
+		System.out.println("Iniciando execução do teste de regressão do site DemoStore...");
 	}
 
 	@AfterClass
 	public static void end() {
-		System.out.println("Finalizando...");
+		System.out.println("Finalizando teste de regressão...");
 	}
 }

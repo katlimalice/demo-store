@@ -3,6 +3,8 @@ package appobject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ProductAppObject {
 	private WebDriver driver;
@@ -24,11 +26,15 @@ public class ProductAppObject {
 	}
 
 	public WebElement getContinueShoppingButton() {
-		return this.driver.findElement(By.xpath("/html/body/div[7]/div/div[2]/div[1]/a"));
+		WebDriverWait wait = new WebDriverWait(this.driver, 3);
+		return wait.until(
+				ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[7]/div/div[2]/div[1]/a")));
 	}
 
 	public WebElement getGoToMyCartButton() {
-		return this.driver.findElement(By.xpath("//*[@id=\"sw_dropdown_8\"]/a"));
+		WebDriverWait wait = new WebDriverWait(this.driver, 3);
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(
+				By.xpath("//*[@id=\"tygh_main_container\"]/div[2]/div/div[1]/div[3]/div/div[2]/div")));
 	}
 
 	public WebElement getViewCartButton() {

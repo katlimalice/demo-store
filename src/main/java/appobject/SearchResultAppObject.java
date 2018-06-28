@@ -12,7 +12,7 @@ public class SearchResultAppObject {
 	}
 
 	public WebElement getGoToBatmanProductButton() {
-		return this.driver.findElement(By.id("//*[@id=\"pagination_contents\"]/div[2]/div[1]/div/form/div[1]/a"));
+		return this.driver.findElement(By.xpath("//*[@id=\"pagination_contents\"]/div[2]/div[1]/div/form/div[1]/a"));
 	}
 
 	public WebElement getGoToIphoneProductButton() {

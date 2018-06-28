@@ -16,5 +16,4 @@ public class HomeTask {
 		this.homeAppObject.getFindProductsTextField().sendKeys(product);
 		this.homeAppObject.getSearchButton().click();
 	}
-
 }
